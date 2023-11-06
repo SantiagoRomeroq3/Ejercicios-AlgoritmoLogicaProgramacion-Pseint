@@ -1,14 +1,14 @@
 Funcion Ejercicio1
-	//1) Determinar cuánto se  debe pagar por cierta  cantidad de colas,  considerando que si  son más de 23 colas, el costo por unidad  es de $0,50
-	//caso  contrario el precio será  20% mas. Al costo resultante calcular el 12% del iva.
-	//Se pide presentar: cantidad comprada, el costo ´por unidad, el total sin iva el iva y el total a pagar.
+	//1) Determinar cuÃ¡nto se  debe pagar por cierta  cantidad de colas,  considerando que si  son mÃ¡s de 23 colas, el costo por unidad  es de $0,50
+	//caso  contrario el precio serÃ¡  20% mas. Al costo resultante calcular el 12% del iva.
+	//Se pide presentar: cantidad comprada, el costo Â´por unidad, el total sin iva el iva y el total a pagar.
 	
 	Definir opcion Como Entero
 	Repetir
 		Escribir "Menu:"
 		Escribir "1. Calcular costo de las colas"
 		Escribir "2. Salir"
-		Escribir "Ingrese su opción:"
+		Escribir "Ingrese su opciÃ³n:"
 		Leer opcion
 		Segun opcion Hacer
 			Caso 1:
@@ -30,18 +30,18 @@ Funcion Ejercicio1
 			Caso 2:
 				Escribir "Saliendo del programa."
 			De Otro Modo:
-				Escribir "Opción no válida. Por favor, seleccione una opción válida."
+				Escribir "OpciÃ³n no vÃ¡lida. Por favor, seleccione una opciÃ³n vÃ¡lida."
 		FinSegun
 	Hasta Que opcion = 2
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 Funcion Ejercicio2
-	//2) La asociación de vinicultores tiene como política fijar un precio inicial al kilo de uva, la cual se clasifica en tipos A y B,y además en tamaños 1 y 2. 
-	//Cuando se realiza la venta del producto, ésta es de un solo tipo y tamaño, se requiere determinar cuánto recibirá un productor por la uva que  entrega en un  
-	//embarque, considerando lo siguiente:Si es de tipo A, se le cargan 20 al precio  inicial cuando es  de tamaño 1;
-	//y 30 si es de tamaño 2. Si es de tipo B, se rebajan  30 cuando es de tamaño 1, y  50 cuando es de tamaño 2.
+	//2) La asociaciÃ³n de vinicultores tiene como polÃ­tica fijar un precio inicial al kilo de uva, la cual se clasifica en tipos A y B,y ademÃ¡s en tamaÃ±os 1 y 2. 
+	//Cuando se realiza la venta del producto, Ã©sta es de un solo tipo y tamaÃ±o, se requiere determinar cuÃ¡nto recibirÃ¡ un productor por la uva que  entrega en un  
+	//embarque, considerando lo siguiente:Si es de tipo A, se le cargan 20 al precio  inicial cuando es  de tamaÃ±o 1;
+	//y 30 si es de tamaÃ±o 2. Si es de tipo B, se rebajan  30 cuando es de tamaÃ±o 1, y  50 cuando es de tamaÃ±o 2.
 	//Realice un algoritmo para determinar la ganancia obtenida 	
-	Definir precioInicial, tamañoUva, ganancia Como Entero
+	Definir precioInicial, tamaÃ±oUva, ganancia Como Entero
 	Definir  tipoUva Como Caracter
 	
 	Escribir "Bienvenido a la calculadora de ganancia de la uva"
@@ -51,17 +51,17 @@ Funcion Ejercicio2
 	Escribir "Ingrese el tipo de uva (A o B):"
 	Leer tipoUva
 	
-	Escribir "Ingrese el tamaño de uva (1 o 2):"
-	Leer tamañoUva
+	Escribir "Ingrese el tamaÃ±o de uva (1 o 2):"
+	Leer tamaÃ±oUva
 	
 	Si tipoUva = "A" Entonces
-		Si tamañoUva = 1 Entonces
+		Si tamaÃ±oUva = 1 Entonces
 			ganancia = precioInicial + 20
 		Sino
 			ganancia = precioInicial + 30
 		Fin Si
 	Sino
-		Si tamañoUva = 1 Entonces
+		Si tamaÃ±oUva = 1 Entonces
 			ganancia = precioInicial - 30
 		Sino
 			ganancia = precioInicial - 50
@@ -70,12 +70,12 @@ Funcion Ejercicio2
 	
 	Escribir "La ganancia del productor es: ", ganancia, " por kilo de uva."
 	
-	Escribir "¿Desea calcular otra ganancia? (1 para sí, 2 para salir):"
+	Escribir "Â¿Desea calcular otra ganancia? (1 para sÃ­, 2 para salir):"
 	Leer opcion
 	
 	Si opcion = 1 Entonces
 		Repetir
-			// Puedes colocar aquí el código para calcular otra ganancia
+			// Puedes colocar aquÃ­ el cÃ³digo para calcular otra ganancia
 		Hasta Que opcion = 2
 	Sino
 		Escribir "Hasta luego"
@@ -84,11 +84,11 @@ Funcion Ejercicio2
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 Funcion Ejercicio3
-	//3) Dado dos números obtener el residuo sin el operador mod, % 
+	//3) Dado dos nÃºmeros obtener el residuo sin el operador mod, % 
 	
     Definir dividendo, divisor, residuo Como Entero
     Definir opcion Como Entero
-	Escribir "Seleccione una opción:"
+	Escribir "Seleccione una opciÃ³n:"
 	Escribir "1. Calcular el residuo"
 	Escribir "2. Salir"
 	Leer opcion
@@ -108,21 +108,21 @@ Funcion Ejercicio3
 		Escribir "El residuo es:", residuo
 	Sino
 		Si opcion <> 2 Entonces
-			Escribir "Opción no válida. Intente de nuevo."
+			Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
 		FinSi
 	FinSi
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio4
-    //4) El consultorio del Dr. Paez tiene como política cobrar la consulta con base en el número de cita, de la siguiente forma:
+    //4) El consultorio del Dr. Paez tiene como polÃ­tica cobrar la consulta con base en el nÃºmero de cita, de la siguiente forma:
 	//Las tres primeras citas a $200.00 c/u. 
 	//Las siguientes dos citas a $150.00 c/u. 
 	//Las tres siguientes citas a $100.00 c/u. 
 	//Las restantes a $50.00 c/u, mientras dure el tratamiento.   
-	//Se requiere un algoritmo para determinar: Cuánto pagará el paciente por la cita.  El monto de lo que ha pagado el paciente por el tratamiento. 
-	//Para la solución de este problema se requiere saber qué número de cita se efectuará,
-	//con el cual se podrá determinar el costo que tendrá la consulta  y cuánto se ha gastado en el tratamiento.
+	//Se requiere un algoritmo para determinar: CuÃ¡nto pagarÃ¡ el paciente por la cita.  El monto de lo que ha pagado el paciente por el tratamiento. 
+	//Para la soluciÃ³n de este problema se requiere saber quÃ© nÃºmero de cita se efectuarÃ¡,
+	//con el cual se podrÃ¡ determinar el costo que tendrÃ¡ la consulta  y cuÃ¡nto se ha gastado en el tratamiento.
 	
     Definir numeroCita Como Entero
     Definir costoCita Como Real
@@ -130,91 +130,91 @@ Funcion Ejercicio4
     Definir opcionMenu Como Entero
     Escribir "Bienvenido al consultorio del Dr. Paez"
     Escribir "--------------------------------------"
-	Escribir "Seleccione una opción:"
+	Escribir "Seleccione una opciÃ³n:"
 	Escribir "1. Calcular el costo de la cita"
 	Escribir "2. Calcular el monto total gastado en el tratamiento"
 	Escribir "3. Salir"
 	Leer opcionMenu
 	Segun opcionMenu Hacer
 		Caso 1:
-			Escribir "Ingrese el número de cita:"
+			Escribir "Ingrese el nÃºmero de cita:"
 			Leer numeroCita
 			//costoCita = CalcularCostoCita(numeroCita)
-			Escribir "El costo de la cita número ", numeroCita, " es: $10", costoCita
+			Escribir "El costo de la cita nÃºmero ", numeroCita, " es: $10", costoCita
 		Caso 2:
-			Escribir "Ingrese el número de cita para calcular el monto total gastado:"
+			Escribir "Ingrese el nÃºmero de cita para calcular el monto total gastado:"
 			Leer numeroCita
 			//montoTotalGastado = CalcularMontoTotalGastado(numeroCita)
-			Escribir "El monto total gastado hasta la cita número ", numeroCita, " es: $7", montoTotalGastado
+			Escribir "El monto total gastado hasta la cita nÃºmero ", numeroCita, " es: $7", montoTotalGastado
 		Caso 3:
 			Escribir "Gracias por utilizar el consultorio del Dr. Paez."
 		De Otro Modo:
-			Escribir "Opción no válida. Por favor, seleccione una opción válida."
+			Escribir "OpciÃ³n no vÃ¡lida. Por favor, seleccione una opciÃ³n vÃ¡lida."
 	Fin Segun
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio5
-	//5)Escribir un algoritmo que lea cuatro números y determine si el numero 1  es la mitad del número 2; Y si el numero 3 es divisor del numero 4. 
+	//5)Escribir un algoritmo que lea cuatro nÃºmeros y determine si el numero 1  es la mitad del nÃºmero 2; Y si el numero 3 es divisor del numero 4. 
 
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
 	Definir numero1, numero2, numero3, numero4 como entero
     // Entrada de datos
-    Escribir("Ingrese el número 1: ")
+    Escribir("Ingrese el nÃºmero 1: ")
     Leer numero1
-    Escribir("Ingrese el número 2: ")
+    Escribir("Ingrese el nÃºmero 2: ")
     Leer numero2
-    Escribir("Ingrese el número 3: ")
+    Escribir("Ingrese el nÃºmero 3: ")
     Leer numero3
-    Escribir("Ingrese el número 4: ")
+    Escribir("Ingrese el nÃºmero 4: ")
     Leer numero4
-    // Menú de opciones
-    Escribir("Seleccione una opción:")
-    Escribir("1. Verificar si el número 1 es la mitad del número 2")
-    Escribir("2. Verificar si el número 3 es divisor del número 4")
+    // MenÃº de opciones
+    Escribir("Seleccione una opciÃ³n:")
+    Escribir("1. Verificar si el nÃºmero 1 es la mitad del nÃºmero 2")
+    Escribir("2. Verificar si el nÃºmero 3 es divisor del nÃºmero 4")
     Escribir("3. Salir")
     Leer opcion
     // Procesamiento de opciones
     Segun opcion Hacer
         1:
-            // Verificar si el número 1 es la mitad del número 2
+            // Verificar si el nÃºmero 1 es la mitad del nÃºmero 2
             Si (numero1 * 2 = numero2) Entonces
-                Escribir("El número 1 es la mitad del número 2.")
+                Escribir("El nÃºmero 1 es la mitad del nÃºmero 2.")
             Sino
-                Escribir("El número 1 no es la mitad del número 2.")
+                Escribir("El nÃºmero 1 no es la mitad del nÃºmero 2.")
             FinSi
         2:
-            // Verificar si el número 3 es divisor del número 4
+            // Verificar si el nÃºmero 3 es divisor del nÃºmero 4
             Si (numero4 MOD numero3 = 0) Entonces
-                Escribir("El número 3 es divisor del número 4.")
+                Escribir("El nÃºmero 3 es divisor del nÃºmero 4.")
             Sino
-                Escribir("El número 3 no es divisor del número 4.")
+                Escribir("El nÃºmero 3 no es divisor del nÃºmero 4.")
             FinSi
         3:
             Escribir("Saliendo del programa.")
         Otro:
-            Escribir("Opción no válida.")
+            Escribir("OpciÃ³n no vÃ¡lida.")
     FinSegun
 FinFuncion
 Funcion Ejercicio6
 	//---------------------------------------------------------------------------------------------------------------------------------------//
-	//6) El banco XYZ ha decidido aumentar el límite de crédito de las tarjetas de crédito  de sus clientes, para esto considera que: 
-	//Si su cliente tiene tarjeta tipo 1, el aumento será del  25%. 
-	//Si tiene tipo 2 el aumento será del 35% 
-	//Si tiene tipo 3, el aumento será del 40% 
-	//Para cualquier otro tipo será del 50% Se pide realizar un algoritmo que ayude al banco a determinar el nuevo límite de crédito 
-	//que tendrá una persona en su tarjeta considerando que después del aumento de porcentaje se tendrá que subir $20 adicionales a todas las tarjetas 
-    // Declaración de variables
+	//6) El banco XYZ ha decidido aumentar el lÃ­mite de crÃ©dito de las tarjetas de crÃ©dito  de sus clientes, para esto considera que: 
+	//Si su cliente tiene tarjeta tipo 1, el aumento serÃ¡ del  25%. 
+	//Si tiene tipo 2 el aumento serÃ¡ del 35% 
+	//Si tiene tipo 3, el aumento serÃ¡ del 40% 
+	//Para cualquier otro tipo serÃ¡ del 50% Se pide realizar un algoritmo que ayude al banco a determinar el nuevo lÃ­mite de crÃ©dito 
+	//que tendrÃ¡ una persona en su tarjeta considerando que despuÃ©s del aumento de porcentaje se tendrÃ¡ que subir $20 adicionales a todas las tarjetas 
+    // DeclaraciÃ³n de variables
 	
 	Definir tipotarjeta como entero
 	Definir limiteActual, nuevoLimite como real
     // Entrada de datos
     Escribir("Ingrese el tipo de tarjeta (1, 2, 3 u otro): ")
     Leer tipotarjeta
-    Escribir("Ingrese el límite de crédito actual: ")
+    Escribir("Ingrese el lÃ­mite de crÃ©dito actual: ")
     Leer limiteActual
-    // Menú de opciones
+    // MenÃº de opciones
     Escribir("Seleccione el tipo de tarjeta:")
     Escribir("1. Tipo 1")
     Escribir("2. Tipo 2")
@@ -233,72 +233,72 @@ Funcion Ejercicio6
             nuevoLimite = limiteActual * 1.50 + 20
     FinSegun
     // Salida de resultados
-    Escribir "El nuevo límite de crédito es: ", nuevoLimite
+    Escribir "El nuevo lÃ­mite de crÃ©dito es: ", nuevoLimite
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio7
-	//Escribir un algoritmo que lea cuatro números y determine si el numero 1 es divisor del numero3 Y si el numero 2 es el doble del numero 4. 
+	//Escribir un algoritmo que lea cuatro nÃºmeros y determine si el numero 1 es divisor del numero3 Y si el numero 2 es el doble del numero 4. 
 	
-	// Declaración de variables
+	// DeclaraciÃ³n de variables
 	Definir numero1, numero2, numero3, numero4 Como Entero
 	// Entrada de datos
-	Escribir("Ingrese el número 1: ")
+	Escribir("Ingrese el nÃºmero 1: ")
 	Leer numero1
-	Escribir("Ingrese el número 2: ")
+	Escribir("Ingrese el nÃºmero 2: ")
 	Leer numero2
-	Escribir("Ingrese el número 3: ")
+	Escribir("Ingrese el nÃºmero 3: ")
 	Leer numero3
-	Escribir("Ingrese el número 4: ")
+	Escribir("Ingrese el nÃºmero 4: ")
 	Leer numero4
-	// Menú de opciones
-	Escribir("Seleccione una opción:")
-	Escribir("1. Verificar si el número 1 es divisor del número 3")
-	Escribir("2. Verificar si el número 2 es el doble del número 4")
+	// MenÃº de opciones
+	Escribir("Seleccione una opciÃ³n:")
+	Escribir("1. Verificar si el nÃºmero 1 es divisor del nÃºmero 3")
+	Escribir("2. Verificar si el nÃºmero 2 es el doble del nÃºmero 4")
 	Escribir("3. Salir")
 	Leer opcion
 	// Procesamiento de opciones
     Segun opcion Hacer
         1:
-            // Verificar si el número 1 es divisor del número 3
+            // Verificar si el nÃºmero 1 es divisor del nÃºmero 3
             Si (numero3 MOD numero1 = 0) Entonces
-                Escribir("El número 1 es divisor del número 3.")
+                Escribir("El nÃºmero 1 es divisor del nÃºmero 3.")
             Sino
-                Escribir("El número 1 no es divisor del número 3.")
+                Escribir("El nÃºmero 1 no es divisor del nÃºmero 3.")
             FinSi
         2:
-            // Verificar si el número 2 es el doble del número 4
+            // Verificar si el nÃºmero 2 es el doble del nÃºmero 4
             Si (numero2 = numero4 * 2) Entonces
-                Escribir("El número 2 es el doble del número 4.")
+                Escribir("El nÃºmero 2 es el doble del nÃºmero 4.")
             Sino
-                Escribir("El número 2 no es el doble del número 4.")
+                Escribir("El nÃºmero 2 no es el doble del nÃºmero 4.")
             FinSi
         3:
             Escribir("Saliendo del programa.")
         Otro:
-            Escribir("Opción no válida.")
+            Escribir("OpciÃ³n no vÃ¡lida.")
     FinSegun
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio8
-	//8) El banco POO ha decidido aumentar el límite de crédito de las tarjetas de crédito  de sus clientes, para esto considera que: 
-	//Si su cliente tiene tarjeta tipo 1, el aumento será del  $100 . 
-	//Si tiene tipo 2 el aumento será del $200 
-	//Si tiene tipo 3, el aumento será del $300 
-	//Para cualquier otro tipo será del 500 
-	//Realizar un algoritmo que ayude al banco a determinar el nuevo límite de crédito que tendrá una persona
-	//en su tarjeta considerando que  después del aumento se tendrá que subir 10% adicionales a todas las tarjetas 
-    // Declaración de variables
+	//8) El banco POO ha decidido aumentar el lÃ­mite de crÃ©dito de las tarjetas de crÃ©dito  de sus clientes, para esto considera que: 
+	//Si su cliente tiene tarjeta tipo 1, el aumento serÃ¡ del  $100 . 
+	//Si tiene tipo 2 el aumento serÃ¡ del $200 
+	//Si tiene tipo 3, el aumento serÃ¡ del $300 
+	//Para cualquier otro tipo serÃ¡ del 500 
+	//Realizar un algoritmo que ayude al banco a determinar el nuevo lÃ­mite de crÃ©dito que tendrÃ¡ una persona
+	//en su tarjeta considerando que  despuÃ©s del aumento se tendrÃ¡ que subir 10% adicionales a todas las tarjetas 
+    // DeclaraciÃ³n de variables
 	
 	Definir tipoTarjeta Como Entero
 	Definir limiteActual, aumento, nuevoLimite Como real
     // Entrada de datos
     Escribir "Ingrese el tipo de tarjeta (1, 2, 3 u otro): "
     Leer tipoTarjeta
-    Escribir("Ingrese el límite de crédito actual: ")
+    Escribir("Ingrese el lÃ­mite de crÃ©dito actual: ")
     Leer limiteActual
-    // Menú de opciones
+    // MenÃº de opciones
     Escribir("Seleccione el tipo de tarjeta:")
     Escribir("1. Tipo 1")
     Escribir("2. Tipo 2")
@@ -316,84 +316,84 @@ Funcion Ejercicio8
         Otro:
             aumento = 500
     FinSegun
-    // Calcular nuevo límite con aumento del 10%
+    // Calcular nuevo lÃ­mite con aumento del 10%
     nuevoLimite = limiteActual + aumento + (limiteActual * 0.10)
     // Salida de resultados
-    Escribir "El nuevo límite de crédito es: ", nuevoLimite
+    Escribir "El nuevo lÃ­mite de crÃ©dito es: ", nuevoLimite
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 Funcion Ejercicio9
-	//9) Pedir al usuario un número y mostrar si es negativo menor que -20, sino mostrar si es positivo par o impar múltiplo de 7.
+	//9) Pedir al usuario un nÃºmero y mostrar si es negativo menor que -20, sino mostrar si es positivo par o impar mÃºltiplo de 7.
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
 	Definir numero Como Entero
     // Entrada de datos
-    Escribir("Ingrese un número: ")
+    Escribir("Ingrese un nÃºmero: ")
     Leer numero
-    // Menú de opciones
-    Escribir("Seleccione una opción:")
-    Escribir("1. Verificar si el número es negativo y menor que -20")
-    Escribir("2. Verificar si el número es positivo, par o impar y múltiplo de 7")
+    // MenÃº de opciones
+    Escribir("Seleccione una opciÃ³n:")
+    Escribir("1. Verificar si el nÃºmero es negativo y menor que -20")
+    Escribir("2. Verificar si el nÃºmero es positivo, par o impar y mÃºltiplo de 7")
     Escribir("3. Salir")
     Leer opcion
     // Procesamiento de opciones
     Segun opcion Hacer
         1:
-            // Verificar si el número es negativo y menor que -20
+            // Verificar si el nÃºmero es negativo y menor que -20
             Si (numero < -20) Entonces
-                Escribir("El número es negativo y menor que -20.")
+                Escribir("El nÃºmero es negativo y menor que -20.")
             Sino
-                Escribir("El número no cumple la condición.")
+                Escribir("El nÃºmero no cumple la condiciÃ³n.")
             FinSi
         2:
-            // Verificar si el número es positivo, par o impar y múltiplo de 7
+            // Verificar si el nÃºmero es positivo, par o impar y mÃºltiplo de 7
             Si (numero > 0) Entonces
                 Si (numero MOD 2 = 0) Entonces
-                    Escribir("El número es positivo, par y múltiplo de 7.")
+                    Escribir("El nÃºmero es positivo, par y mÃºltiplo de 7.")
                 Sino
-                    Escribir("El número es positivo, impar y múltiplo de 7.")
+                    Escribir("El nÃºmero es positivo, impar y mÃºltiplo de 7.")
                 FinSi
             Sino
-                Escribir("El número no es positivo.")
+                Escribir("El nÃºmero no es positivo.")
             FinSi
         3:
             Escribir("Saliendo del programa.")
         Otro:
-            Escribir("Opción no válida.")
+            Escribir("OpciÃ³n no vÃ¡lida.")
     FinSegun
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio10
-// La asociación de vinicultores tiene como política fijar un precio inicial al quintal de pitajaya, la cual se clasifica en tipos "Amarilla" y "Colorada",
-//y además en tamaños 1 y 2. Cuando se realiza la venta del producto, ésta es de un solo tipo y tamaño, se requiere determinar cuánto recibirá un productor 
-//por la pitajaya que entrega en un embarque, considerando lo siguiente: ?  Si es de tipo Amarilla, se le cargan $10 al precio inicial cuando es de tamaño 1; 
-//y 15% mas $5 si es de tamaño 2  ?  Si es de tipo Colorada, se rebajan $20 cuando es de tamaño 1, y 20% cuando es de tamaño 2. 
+// La asociaciÃ³n de vinicultores tiene como polÃ­tica fijar un precio inicial al quintal de pitajaya, la cual se clasifica en tipos "Amarilla" y "Colorada",
+//y ademÃ¡s en tamaÃ±os 1 y 2. Cuando se realiza la venta del producto, Ã©sta es de un solo tipo y tamaÃ±o, se requiere determinar cuÃ¡nto recibirÃ¡ un productor 
+//por la pitajaya que entrega en un embarque, considerando lo siguiente: ?  Si es de tipo Amarilla, se le cargan $10 al precio inicial cuando es de tamaÃ±o 1; 
+//y 15% mas $5 si es de tamaÃ±o 2  ?  Si es de tipo Colorada, se rebajan $20 cuando es de tamaÃ±o 1, y 20% cuando es de tamaÃ±o 2. 
 //Sea tipo Amarilla y Colorada se debe se aplicar un descuento del 5% y el 12% del IVA. Realice un algoritmo para determinar el precio de embarque 
 
     Definir tipoPitajaya, tamaPitajaya, precioInicial, precioFinal, descuentoIVA Como Real
-    // Menú para seleccionar el tipo de pitajaya
+    // MenÃº para seleccionar el tipo de pitajaya
     Escribir("Seleccione el tipo de pitajaya:")
     Escribir("1. Amarilla")
     Escribir("2. Colorada")
     Leer tipoPitajaya
-    // Menú para seleccionar el tamaño de pitajaya
-    Escribir("Seleccione el tamaño de pitajaya:")
-    Escribir("1. Tamaño 1")
-    Escribir("2. Tamaño 2")
+    // MenÃº para seleccionar el tamaÃ±o de pitajaya
+    Escribir("Seleccione el tamaÃ±o de pitajaya:")
+    Escribir("1. TamaÃ±o 1")
+    Escribir("2. TamaÃ±o 2")
     Leer tamaPitajaya
     // Ingresar el precio inicial al quintal de pitajaya
     Escribir("Ingrese el precio inicial al quintal:")
     Leer precioInicial
-    // Calcular el precio final según el tipo y tamaño de pitajaya
+    // Calcular el precio final segÃºn el tipo y tamaÃ±o de pitajaya
     Si tipoPitajaya = 1 Entonces // Pitajaya Amarilla
-        Si tamañoPitajaya = 1 Entonces // Tamaño 1
+        Si tamaÃ±oPitajaya = 1 Entonces // TamaÃ±o 1
             precioFinal = precioInicial + 10
         Sino
             precioFinal = precioInicial * 1.15 + 5
         FinSi
     Sino // Pitajaya Colorada
-        Si tamañoPitajaya = 1 Entonces // Tamaño 1
+        Si tamaÃ±oPitajaya = 1 Entonces // TamaÃ±o 1
             precioFinal = precioInicial - 20
         Sino
             precioFinal = precioInicial * 0.8 // 20% de descuento
@@ -405,56 +405,56 @@ Funcion Ejercicio10
     Escribir "El precio de embarque es:", precioFinal
 FinFuncion
 Funcion Ejercicio11
-	//11) Pedir al usuario un número y mostrar si es par menor que 10, sino mostrar si es negativo e impar o negativo divisible para 5.
+	//11) Pedir al usuario un nÃºmero y mostrar si es par menor que 10, sino mostrar si es negativo e impar o negativo divisible para 5.
 	
     Definir opcion, numero como entero
-    Escribir "Ingrese un número:"
+    Escribir "Ingrese un nÃºmero:"
     Leer numero
-    Escribir "Seleccione una opción:"
+    Escribir "Seleccione una opciÃ³n:"
     Escribir "1. Verificar si es par y menor que 10"
     Escribir "2. Verificar si es negativo e impar"
     Escribir "3. Verificar si es negativo y divisible por 5"
-    Escribir "Ingrese el número de la opción:"
+    Escribir "Ingrese el nÃºmero de la opciÃ³n:"
     Leer opcion
     Segun opcion Hacer
         Caso 1:
             Si (numero % 2 = 0) Y (numero < 10) Entonces
-                Escribir "El número es par y menor que 10."
+                Escribir "El nÃºmero es par y menor que 10."
             Sino
-                Escribir "El número no cumple con la condición."
+                Escribir "El nÃºmero no cumple con la condiciÃ³n."
             FinSi
         Caso 2:
             Si (numero < 0) Y (numero % 2 <> 0) Entonces
-                Escribir "El número es negativo e impar."
+                Escribir "El nÃºmero es negativo e impar."
             Sino
-                Escribir "El número no cumple con la condición."
+                Escribir "El nÃºmero no cumple con la condiciÃ³n."
             FinSi
         Caso 3:
             Si (numero < 0) Y (numero % 5 = 0) Entonces
-                Escribir "El número es negativo y divisible por 5."
+                Escribir "El nÃºmero es negativo y divisible por 5."
             Sino
-                Escribir "El número no cumple con la condición."
+                Escribir "El nÃºmero no cumple con la condiciÃ³n."
             FinSi
         Otro:
-            Escribir "Opción no válida."
+            Escribir "OpciÃ³n no vÃ¡lida."
     FinSegun
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio12
-	//12) Fábricas "El cometa" produce artículos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta, para esto hay
-	//que considerar lo siguiente: Costo de producción = materia prima + mano de obra + gastos de fabricación. Precio de venta = costo de producción + 45 % de costo de producción. 
+	//12) FÃ¡bricas "El cometa" produce artÃ­culos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta, para esto hay
+	//que considerar lo siguiente: Costo de producciÃ³n = materia prima + mano de obra + gastos de fabricaciÃ³n. Precio de venta = costo de producciÃ³n + 45 % de costo de producciÃ³n. 
     //El costo de la mano de obra se obtiene de la siguiente forma: para los productos con clave 3 o 4 se carga 75 % del costo de la materia prima; 
-	//para los que tienen clave 1 o 5 se carga 80 %, y para los que tienen clave 2 o 6, 85 %. Para calcular el gasto de fabricación se considera que, 
-	//si el artículo que se va a producir tiene claves 2 o 5, este gasto representa 30 % sobre el costo de la materia prima; si las claves son 3 o 6, 
+	//para los que tienen clave 1 o 5 se carga 80 %, y para los que tienen clave 2 o 6, 85 %. Para calcular el gasto de fabricaciÃ³n se considera que, 
+	//si el artÃ­culo que se va a producir tiene claves 2 o 5, este gasto representa 30 % sobre el costo de la materia prima; si las claves son 3 o 6, 
 	//representa 35 %; si las claves son 1 o 4, representa 28 %. La materia prima tiene el mismo costo para cualquier clave. 
 	
     Definir clave, materiaPrima, costoManoDeObra, gastosFabricacion, costoProduccion, precioVenta Como Real
-    Escribir "Ingrese la clave del artículo (1, 2, 3, 4, 5 o 6): "
+    Escribir "Ingrese la clave del artÃ­culo (1, 2, 3, 4, 5 o 6): "
     Leer clave
     Escribir "Ingrese el costo de la materia prima: "
     Leer materiaPrima
-    // Calcular costo de mano de obra y gastos de fabricación
+    // Calcular costo de mano de obra y gastos de fabricaciÃ³n
     Segun clave
 		Caso 3, 4:
             costoManoDeObra = 0.75 * materiaPrima
@@ -466,74 +466,74 @@ Funcion Ejercicio12
             costoManoDeObra = 0.85 * materiaPrima
             gastosFabricacion = 0.30 * materiaPrima
 		Caso 0, 7, 8:
-            Escribir "Clave no válida."
+            Escribir "Clave no vÃ¡lida."
             //Detener
     FinSegun
-    // Calcular costo de producción y precio de venta
+    // Calcular costo de producciÃ³n y precio de venta
     costoProduccion = materiaPrima + costoManoDeObra + gastosFabricacion
     precioVenta = costoProduccion + 0.45 * costoProduccion
     // Mostrar resultados
-    Escribir "Costo de producción: ", costoProduccion
+    Escribir "Costo de producciÃ³n: ", costoProduccion
     Escribir "Precio de venta: ", precioVenta
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 Funcion Ejercicio13
-	//13) Dado un número entero N, calcular e informar al usuario cuántos dígitos tiene dicho número.
+	//13) Dado un nÃºmero entero N, calcular e informar al usuario cuÃ¡ntos dÃ­gitos tiene dicho nÃºmero.
 	
     // Definir variables
     Definir opcion, numero, contadorDigitos como entero
-    // Solicitar al usuario ingresar un número entero
-    Escribir "Ingrese un número entero:"
+    // Solicitar al usuario ingresar un nÃºmero entero
+    Escribir "Ingrese un nÃºmero entero:"
     Leer numero
-    // Mostrar menú
-    Escribir "Seleccione una opción:"
-    Escribir "1. Calcular la cantidad de dígitos"
-    Escribir "Ingrese el número de la opción:"
+    // Mostrar menÃº
+    Escribir "Seleccione una opciÃ³n:"
+    Escribir "1. Calcular la cantidad de dÃ­gitos"
+    Escribir "Ingrese el nÃºmero de la opciÃ³n:"
     Leer opcion
-    // Según la opción seleccionada
+    // SegÃºn la opciÃ³n seleccionada
     Segun opcion Hacer
         Caso 1:
-            // Inicializar el contador de dígitos
+            // Inicializar el contador de dÃ­gitos
             contadorDigitos = 0
 			
-            // Calcular la cantidad de dígitos usando un bucle mientras
+            // Calcular la cantidad de dÃ­gitos usando un bucle mientras
             Mientras numero <> 0 Hacer
                 numero = numero / 10
                 contadorDigitos = contadorDigitos + 1
             FinMientras
 			
             // Mostrar el resultado al usuario
-            Escribir "El número tiene ", contadorDigitos, " dígitos."
+            Escribir "El nÃºmero tiene ", contadorDigitos, " dÃ­gitos."
         Otro:
-            // Mensaje para opción no válida
-            Escribir "Opción no válida."
+            // Mensaje para opciÃ³n no vÃ¡lida
+            Escribir "OpciÃ³n no vÃ¡lida."
     FinSegun
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio14
-//14) Dado un número, determine si es capicúa. Nota: un número capicúa es aquel que se lee igual hacia adelante que hacia atrás.
+//14) Dado un nÃºmero, determine si es capicÃºa. Nota: un nÃºmero capicÃºa es aquel que se lee igual hacia adelante que hacia atrÃ¡s.
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir numero, reverso, digito, original Como Entero
-    // Solicitar al usuario que ingrese un número
-    Escribir "Ingrese un número: "
+    // Solicitar al usuario que ingrese un nÃºmero
+    Escribir "Ingrese un nÃºmero: "
     Leer numero
-    // Guardar una copia del número original
+    // Guardar una copia del nÃºmero original
     original = numero
     // Inicializar la variable reverso
     reverso = 0
-    // Calcular el número al revés
+    // Calcular el nÃºmero al revÃ©s
     Mientras numero > 0 Hacer
 		digito = numero Mod 10
 		reverso = reverso * 10 + digito
 		numero = numero/10
     Fin Mientras
-    // Determinar si el número es capicúa
+    // Determinar si el nÃºmero es capicÃºa
     Si original = reverso Entonces
-        Escribir "El número es capicúa."
+        Escribir "El nÃºmero es capicÃºa."
     Sino
-        Escribir "El número no es capicúa."
+        Escribir "El nÃºmero no es capicÃºa."
     Fin Si
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
@@ -541,20 +541,20 @@ FinFuncion
 Funcion Ejercicio15
 	//15) Escribir un algoritmo que presente los divisores de un numero
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir numero, divisor Como Entero
-    // Solicitar al usuario que ingrese un número
-    Escribir "Ingrese un número: "
+    // Solicitar al usuario que ingrese un nÃºmero
+    Escribir "Ingrese un nÃºmero: "
     Leer numero
-    // Menú de opciones
-    Escribir "Seleccione una opción:"
+    // MenÃº de opciones
+    Escribir "Seleccione una opciÃ³n:"
     Escribir "1. Mostrar divisores"
     Escribir "2. Salir"
     Leer opcion
-    // Evaluar la opción seleccionada
+    // Evaluar la opciÃ³n seleccionada
     Segun opcion Hacer
         1:
-            // Mostrar los divisores del número
+            // Mostrar los divisores del nÃºmero
             Escribir "Divisores de ", numero, ":"
             Para divisor = 1 Hasta numero Hacer
                 Si numero Mod divisor = 0 Entonces
@@ -565,29 +565,29 @@ Funcion Ejercicio15
             // Salir del programa
             Escribir "Saliendo del programa."
         De Otro Modo:
-            Escribir "Opción no válida."
+            Escribir "OpciÃ³n no vÃ¡lida."
     Fin Segun
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 Funcion Ejercicio16
 	//16) Escribir un algoritmo que presente la suma de los divisores de un numero 
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir numero, divisor, suma Como Entero
     // Inicializar la variable suma
     suma = 0
-    // Solicitar al usuario que ingrese un número
-    Escribir "Ingrese un número: "
+    // Solicitar al usuario que ingrese un nÃºmero
+    Escribir "Ingrese un nÃºmero: "
     Leer numero
-    // Menú de opciones
-    Escribir "Seleccione una opción:"
+    // MenÃº de opciones
+    Escribir "Seleccione una opciÃ³n:"
     Escribir "1. Calcular y mostrar la suma de divisores"
     Escribir "2. Salir"
     Leer opcion
-    // Evaluar la opción seleccionada
+    // Evaluar la opciÃ³n seleccionada
     Segun opcion Hacer
         1:
-            // Calcular y mostrar la suma de divisores del número
+            // Calcular y mostrar la suma de divisores del nÃºmero
             Para divisor = 1 Hasta numero Hacer
                 Si numero Mod divisor = 0 Entonces
                     suma = suma + divisor
@@ -599,7 +599,7 @@ Funcion Ejercicio16
             // Salir del programa
             Escribir "Saliendo del programa."
         De Otro Modo:
-            Escribir "Opción no válida."
+            Escribir "OpciÃ³n no vÃ¡lida."
     Fin Segun
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
@@ -608,18 +608,18 @@ Funcion Ejercicio17
 	//17) Escribir un algoritmo que presente la cantidad de los divisores de un numero 
 	
     Definir num, contador, opcion como Entero
-    // Menú
-    Mostrar "1. Ingresar número"
+    // MenÃº
+    Mostrar "1. Ingresar nÃºmero"
     Mostrar "2. Contar divisores"
     Mostrar "3. Salir"
     Repetir
-        Escribir "Ingrese una opción: "
+        Escribir "Ingrese una opciÃ³n: "
         Leer opcion
         
         Segun opcion
             Caso 1:
-                // Ingresar número
-                Escribir "Ingrese un número: "
+                // Ingresar nÃºmero
+                Escribir "Ingrese un nÃºmero: "
                 Leer num
             Caso 2:
                 // Contar divisores
@@ -629,76 +629,76 @@ Funcion Ejercicio17
                         contador = contador + 1
                     FinSi
                 FinPara
-                Escribir "El número ", num, " tiene ", contador, " divisores."
+                Escribir "El nÃºmero ", num, " tiene ", contador, " divisores."
             Caso 3:
                 // Salir del programa
-                Escribir "Adiós."
+                Escribir "AdiÃ³s."
             De Otro Modo:
-                Escribir "Opción no válida. Intente de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         FinSegun
     Hasta que opcion = 3
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio18
-	//18) Escribir un algoritmo que indique si un número es perfecto Nota: un número es perfecto cuando la suma de los divisores del número incluido el 1 
-    //y excluido el propio número es igual al numero Ejemplo: numero=6: los divisores del 6 son: 1+2+3=6 
+	//18) Escribir un algoritmo que indique si un nÃºmero es perfecto Nota: un nÃºmero es perfecto cuando la suma de los divisores del nÃºmero incluido el 1 
+    //y excluido el propio nÃºmero es igual al numero Ejemplo: numero=6: los divisores del 6 son: 1+2+3=6 
     Definir num, suma, opcion, i como Entero
-    // Menú
-    Mostrar "1. Ingresar número"
+    // MenÃº
+    Mostrar "1. Ingresar nÃºmero"
     Mostrar "2. Verificar si es perfecto"
     Mostrar "3. Salir"
     Repetir
-        Escribir "Ingrese una opción: "
+        Escribir "Ingrese una opciÃ³n: "
         Leer opcion
         Segun opcion
             Caso 1:
-                // Ingresar número
-                Escribir "Ingrese un número: "
+                // Ingresar nÃºmero
+                Escribir "Ingrese un nÃºmero: "
                 Leer num
             Caso 2:
                 // Verificar si es perfecto
                 suma = 0
-                Para i = 1 Hasta num / 2 // Iterar hasta la mitad del número, ya que los divisores no superarán esa mitad.
+                Para i = 1 Hasta num / 2 // Iterar hasta la mitad del nÃºmero, ya que los divisores no superarÃ¡n esa mitad.
                     Si num % i == 0 Entonces
                         suma = suma + i
                     FinSi
                 FinPara
                 Si suma == num Entonces
-                    Escribir "El número ", num, " es perfecto."
+                    Escribir "El nÃºmero ", num, " es perfecto."
                 Sino
-                    Escribir "El número ", num, " no es perfecto."
+                    Escribir "El nÃºmero ", num, " no es perfecto."
                 FinSi
             Caso 3:
                 // Salir del programa
-                Escribir "Adiós."
+                Escribir "AdiÃ³s."
             De Otro Modo:
-                Escribir "Opción no válida. Intente de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         FinSegun
     Hasta que opcion = 3
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio19
-	//19) Dado un número N determinar si es un número primo. Nota: Un número primo es aquel que solo es divisible por 1(uno) y por el mismo.
+	//19) Dado un nÃºmero N determinar si es un nÃºmero primo. Nota: Un nÃºmero primo es aquel que solo es divisible por 1(uno) y por el mismo.
 	
     Definir num, i, opcion, contador como Entero
-    // Menú
-    Mostrar "1. Ingresar número"
+    // MenÃº
+    Mostrar "1. Ingresar nÃºmero"
     Mostrar "2. Verificar si es primo"
     Mostrar "3. Salir"
     Repetir
-        Escribir "Ingrese una opción: "
+        Escribir "Ingrese una opciÃ³n: "
         Leer opcion
         Segun opcion
             Caso 1:
-                // Ingresar número
-                Escribir "Ingrese un número: "
+                // Ingresar nÃºmero
+                Escribir "Ingrese un nÃºmero: "
                 Leer num
             Caso 2:
                 // Verificar si es primo
                 Si num <= 1 Entonces
-                    Escribir "El número ", num, " no es primo."
+                    Escribir "El nÃºmero ", num, " no es primo."
                 Sino
                     contador = 0
                     Para i = 1 Hasta num
@@ -707,42 +707,42 @@ Funcion Ejercicio19
                         FinSi
                     FinPara
                     Si contador == 2 Entonces
-                        Escribir "El número ", num, " es primo."
+                        Escribir "El nÃºmero ", num, " es primo."
                     Sino
-                        Escribir "El número ", num, " no es primo."
+                        Escribir "El nÃºmero ", num, " no es primo."
                     FinSi
                 FinSi
             Caso 3:
                 // Salir del programa
-                Escribir "Adiós."
+                Escribir "AdiÃ³s."
             De Otro Modo:
-                Escribir "Opción no válida. Intente de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         FinSegun
     Hasta que opcion = 3
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio20
-	//20) Dado dos números determinar si son   primos gemelos. Nota: Dos números son primos gemelos si los dos son primos y su resta en valor absoluto 
+	//20) Dado dos nÃºmeros determinar si son   primos gemelos. Nota: Dos nÃºmeros son primos gemelos si los dos son primos y su resta en valor absoluto 
     //es igual a 2.  Ejemplo: 7 y 5 
 	
     Definir num1, num2, i, opcion, contador1, contador2 como Entero
-    // Menú
-    Mostrar "1. Ingresar primer número"
-    Mostrar "2. Ingresar segundo número"
+    // MenÃº
+    Mostrar "1. Ingresar primer nÃºmero"
+    Mostrar "2. Ingresar segundo nÃºmero"
     Mostrar "3. Verificar si son primos gemelos"
     Mostrar "4. Salir"
     Repetir
-        Escribir "Ingrese una opción: "
+        Escribir "Ingrese una opciÃ³n: "
         Leer opcion
         Segun opcion
             Caso 1:
-                // Ingresar primer número
-                Escribir "Ingrese el primer número: "
+                // Ingresar primer nÃºmero
+                Escribir "Ingrese el primer nÃºmero: "
                 Leer num1
             Caso 2:
-                // Ingresar segundo número
-                Escribir "Ingrese el segundo número: "
+                // Ingresar segundo nÃºmero
+                Escribir "Ingrese el segundo nÃºmero: "
                 Leer num2
             Caso 3:
                 // Verificar si son primos gemelos
@@ -759,41 +759,41 @@ Funcion Ejercicio20
                     FinSi
                 FinPara
                 Si contador1 == 2 Y contador2 == 2 Y Abs(num1 - num2) == 2 Entonces
-                    Escribir "Los números ", num1, " y ", num2, " son primos gemelos."
+                    Escribir "Los nÃºmeros ", num1, " y ", num2, " son primos gemelos."
                 Sino
-                    Escribir "Los números ", num1, " y ", num2, " no son primos gemelos."
+                    Escribir "Los nÃºmeros ", num1, " y ", num2, " no son primos gemelos."
                 FinSi
             Caso 4:
                 // Salir del programa
                 Escribir "Que tengas lindo dia "
             De Otro Modo:
-                Escribir "Opción no válida. Intente de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         FinSegun
     Hasta que opcion = 4
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio21
-	//21) Dado dos números determinar si son   primos amigos. Nota: Dos números son primos amigos si las sumas de los divisores del numero1 
+	//21) Dado dos nÃºmeros determinar si son   primos amigos. Nota: Dos nÃºmeros son primos amigos si las sumas de los divisores del numero1 
     //es igual a la suma de los divisores del numero2.  Ejemplo: 6(1+2+3=6) y 25(1+5=6) 
 	
     Definir num1, num2, i, opcion, sumaDivisores1, sumaDivisores2 como Entero
-    // Menú
-    Mostrar "1. Ingresar primer número"
-    Mostrar "2. Ingresar segundo número"
+    // MenÃº
+    Mostrar "1. Ingresar primer nÃºmero"
+    Mostrar "2. Ingresar segundo nÃºmero"
     Mostrar "3. Verificar si son primos amigos"
     Mostrar "4. Salir"
     Repetir
-        Escribir "Ingrese una opción: "
+        Escribir "Ingrese una opciÃ³n: "
         Leer opcion
         Segun opcion
             Caso 1:
-                // Ingresar primer número
-                Escribir "Ingrese el primer número: "
+                // Ingresar primer nÃºmero
+                Escribir "Ingrese el primer nÃºmero: "
                 Leer num1
             Caso 2:
-                // Ingresar segundo número
-                Escribir "Ingrese el segundo número: "
+                // Ingresar segundo nÃºmero
+                Escribir "Ingrese el segundo nÃºmero: "
                 Leer num2
             Caso 3:
                 // Verificar si son primos amigos
@@ -810,15 +810,15 @@ Funcion Ejercicio21
                     FinSi
                 FinPara
                 Si sumaDivisores1 == num2 Y sumaDivisores2 == num1 Entonces
-                    Escribir "Los números ", num1, " y ", num2, " son primos amigos."
+                    Escribir "Los nÃºmeros ", num1, " y ", num2, " son primos amigos."
                 Sino
-                    Escribir "Los números ", num1, " y ", num2, " no son primos amigos."
+                    Escribir "Los nÃºmeros ", num1, " y ", num2, " no son primos amigos."
                 FinSi
             Caso 4:
                 // Salir del programa
-                Escribir "Adiós te me cuidas "
+                Escribir "AdiÃ³s te me cuidas "
             De Otro Modo:
-                Escribir "Opción no válida. Intente de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         FinSegun
     Hasta que opcion = 4
 FinFuncion
@@ -835,10 +835,10 @@ Funcion Ejercicio1C
     Leer n
     
     Repetir
-        Escribir "Menú:"
+        Escribir "MenÃº:"
         Escribir "1. Mostrar secuencia"
         Escribir "2. Salir"
-        Escribir "Seleccione una opción:"
+        Escribir "Seleccione una opciÃ³n:"
         Leer opcion
         
         Segun opcion Hacer
@@ -851,19 +851,19 @@ Funcion Ejercicio1C
             2:
                 Escribir "Saliendo del programa."
             Otro:
-                Escribir "Opción no válida. Intente de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         Fin Segun
     Hasta Que opcion = 2
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio2C
-	//2) Implementa un programa que calcule el promedio de los elementos pares e impares en un arreglo de números enteros y los copie en otro arreglo.
+	//2) Implementa un programa que calcule el promedio de los elementos pares e impares en un arreglo de nÃºmeros enteros y los copie en otro arreglo.
 	
     Definir tamano, i, num como Entero
     Definir productoPares, productoImpares como Entero
     
-    Escribir "Ingrese el tamaño del arreglo:"
+    Escribir "Ingrese el tamaÃ±o del arreglo:"
     Leer tamano
     
     Definir arreglotamano, pares, impares como Entero
@@ -891,23 +891,23 @@ FinFuncion
 Funcion Ejercicio3C
 	//3) Dada n realizar un algoritmo que presente la siguiente secuencia n=6 respuesta=  20 5 15 10  5 -5  0
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir n, i, opcion como Entero
     Definir respuesta como Real
     
-    // Inicialización de variables
+    // InicializaciÃ³n de variables
     n = 6
     respuesta = 20
     
-    // Menú principal
+    // MenÃº principal
     Repetir
-        Escribir "Menú:"
+        Escribir "MenÃº:"
         Escribir "1. Mostrar secuencia"
         Escribir "2. Salir"
-        Escribir "Seleccione una opción:"
+        Escribir "Seleccione una opciÃ³n:"
         Leer opcion
         
-        // Selección de opción
+        // SelecciÃ³n de opciÃ³n
         Segun opcion Hacer
             1:
                 // Mostrar secuencia
@@ -924,22 +924,22 @@ Funcion Ejercicio3C
                 // Salir del programa
                 Escribir "Saliendo del programa."
             Otro:
-                // Opción no válida
-                Escribir "Opción no válida. Intente de nuevo."
+                // OpciÃ³n no vÃ¡lida
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         Fin Segun
     Hasta Que opcion = 2
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio4C
-	//4) Implementa un programa que copie los números de un arreglo a  2 arreglos en uno  los números positivos y en el otro los negativos 
+	//4) Implementa un programa que copie los nÃºmeros de un arreglo a  2 arreglos en uno  los nÃºmeros positivos y en el otro los negativos 
     //Ejemplo: arreglo=[2,-6,4,-9, 12]  arregloPositivo=[2,4,12]   arregloNegativo[-6,-9] 
 	
     // Declarar variables
     Definir n, i, j, k Como Entero
     Definir arregloOriginal, arregloPositivos, arregloNegativos Como Real
 	
-    // Entrada de datos y validar tamaño del arreglo
+    // Entrada de datos y validar tamaÃ±o del arreglo
 	Escribir "Ingrese la cantidad de elementos del arreglo (menor o igual a 100):"
 	Leer n
 	Escribir "Ingrese los elementos del arreglo:"
@@ -962,111 +962,111 @@ Funcion Ejercicio4C
 	
 	// Salida de resultados
 	Si j > 1 Entonces
-		Escribir "Arreglo de números positivos:"
+		Escribir "Arreglo de nÃºmeros positivos:"
 		Para i = 1 Hasta j - 1
 			Escribir arregloPositivos
 		FinPara
 	Sino
-		Escribir "No hay números positivos en el arreglo."
+		Escribir "No hay nÃºmeros positivos en el arreglo."
 	FinSi
 	
 	Si k > 1 Entonces
-		Escribir "Arreglo de números negativos:"
+		Escribir "Arreglo de nÃºmeros negativos:"
 		Para i = 1 Hasta k - 1
 			Escribir arregloNegativos
 		FinPara
 	Sino
-		Escribir "No hay números negativos en el arreglo."
+		Escribir "No hay nÃºmeros negativos en el arreglo."
 	FinSi
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio5C
-	//5) Leer una secuencia de números hasta que se ingrese un numero negativo. 
-	//Mostrar la suma de los pares y la cantidad de los números que son múltiplo de 3 
+	//5) Leer una secuencia de nÃºmeros hasta que se ingrese un numero negativo. 
+	//Mostrar la suma de los pares y la cantidad de los nÃºmeros que son mÃºltiplo de 3 
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir num, sumaPares, contMultiplos3, opcion como Entero
     
-    // Inicialización de variables
+    // InicializaciÃ³n de variables
     sumaPares = 0
     contMultiplos3 = 0
     
-    // Menú principal
+    // MenÃº principal
     Repetir
-        Escribir "Menú:"
-        Escribir "1. Ingresar secuencia de números"
-        Escribir "2. Mostrar suma de pares y cantidad de múltiplos de 3"
+        Escribir "MenÃº:"
+        Escribir "1. Ingresar secuencia de nÃºmeros"
+        Escribir "2. Mostrar suma de pares y cantidad de mÃºltiplos de 3"
         Escribir "3. Salir"
-        Escribir "Seleccione una opción:"
+        Escribir "Seleccione una opciÃ³n:"
         Leer opcion
         
-        // Selección de opción
+        // SelecciÃ³n de opciÃ³n
         Segun opcion Hacer
             1:
-                // Ingresar secuencia de números hasta que se ingrese un negativo
+                // Ingresar secuencia de nÃºmeros hasta que se ingrese un negativo
                 Mientras Verdadero
-                    Escribir "Ingrese un número (ingrese un número negativo para terminar):"
+                    Escribir "Ingrese un nÃºmero (ingrese un nÃºmero negativo para terminar):"
                     Leer num
                     
                     Si num < 0 Entonces
-                        // Salir del bucle si se ingresa un número negativo
+                        // Salir del bucle si se ingresa un nÃºmero negativo
                         //romper
                     Fin Si
                     
-                    // Verificar si el número es par
+                    // Verificar si el nÃºmero es par
                     Si num MOD 2 = 0 Entonces
                         sumaPares = sumaPares + num
                     Fin Si
                     
-                    // Verificar si el número es múltiplo de 3
+                    // Verificar si el nÃºmero es mÃºltiplo de 3
                     Si num MOD 3 = 0 Entonces
                         contMultiplos3 = contMultiplos3 + 1
                     Fin Si
                 Fin Mientras
             2:
-                // Mostrar suma de pares y cantidad de múltiplos de 3
-                Escribir "Suma de números pares:", sumaPares
-                Escribir "Cantidad de números múltiplos de 3:", contMultiplos3
+                // Mostrar suma de pares y cantidad de mÃºltiplos de 3
+                Escribir "Suma de nÃºmeros pares:", sumaPares
+                Escribir "Cantidad de nÃºmeros mÃºltiplos de 3:", contMultiplos3
             3:
                 // Salir del programa
                 Escribir "Saliendo del programa."
             Otro:
-                // Opción no válida
-                Escribir "Opción no válida. Intente de nuevo."
+                // OpciÃ³n no vÃ¡lida
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         Fin Segun
     Hasta Que opcion = 3
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio6C
-	//6) Leer una secuencia de números hasta que se ingrese un 0 y almacenarlos en un arreglo 
+	//6) Leer una secuencia de nÃºmeros hasta que se ingrese un 0 y almacenarlos en un arreglo 
 	//Se pide recorrer el arreglo y mostrar la suma del cuadrado de cada numero. 
 	
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir num, sumaCuadrados, i, opcion como Entero
     Definir arreglo como Entero
     
-    // Inicialización de variables
+    // InicializaciÃ³n de variables
     i = 1
     sumaCuadrados = 0
     
-    // Menú principal
+    // MenÃº principal
     Repetir
-        Escribir "Menú:"
-        Escribir "1. Ingresar secuencia de números (ingrese 0 para terminar)"
+        Escribir "MenÃº:"
+        Escribir "1. Ingresar secuencia de nÃºmeros (ingrese 0 para terminar)"
         Escribir "2. Mostrar suma de cuadrados"
         Escribir "3. Salir"
-        Escribir "Seleccione una opción:"
+        Escribir "Seleccione una opciÃ³n:"
         Leer opcion
         
-        // Selección de opción
+        // SelecciÃ³n de opciÃ³n
         Segun opcion Hacer
             1:
-                // Ingresar secuencia de números hasta que se ingrese un 0
+                // Ingresar secuencia de nÃºmeros hasta que se ingrese un 0
                 Mientras Verdadero
-                    Escribir "Ingrese un número (ingrese 0 para terminar):"
+                    Escribir "Ingrese un nÃºmero (ingrese 0 para terminar):"
                     Leer num
                     
                     Si num = 0 Entonces
@@ -1074,7 +1074,7 @@ Funcion Ejercicio6C
                         //Romper
                     Fin Si
                     
-                    // Almacenar el número en el arreglo
+                    // Almacenar el nÃºmero en el arreglo
                     //arreglo[i] <- num
                     i = i + 1
                 Fin Mientras
@@ -1083,7 +1083,7 @@ Funcion Ejercicio6C
                 Escribir "Arreglo:"
                 Para i = 1 Hasta i - 1 Hacer
                     Escribir arreglo
-                    // Sumar el cuadrado de cada número
+                    // Sumar el cuadrado de cada nÃºmero
                     sumaCuadrados <- sumaCuadrados + arreglo^2
                 Fin Para
                 Escribir "Suma de cuadrados:", sumaCuadrados
@@ -1091,44 +1091,44 @@ Funcion Ejercicio6C
                 // Salir del programa
                 Escribir "Saliendo del programa."
             Otro:
-                // Opción no válida
-                Escribir "Opción no válida. Intente de nuevo."
+                // OpciÃ³n no vÃ¡lida
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         Fin Segun
     Hasta Que opcion = 3
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio7C
-	//7) Leer una secuencia de números hasta que se ingrese un numero par.  Mostrar la cantidad de los números mayores a 5 y la suma de los múltiplos de 5 
+	//7) Leer una secuencia de nÃºmeros hasta que se ingrese un numero par.  Mostrar la cantidad de los nÃºmeros mayores a 5 y la suma de los mÃºltiplos de 5 
     //Ejemplo: secuencia: 3,5,15,7,9, 4  Respuesta contMay5=3 sumaMultiplos5=20 
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir num, contMay5, sumaMultiplos5, opcion como Entero
-    // Inicialización de variables
+    // InicializaciÃ³n de variables
     contMay5 = 0
     sumaMultiplos5 = 0
-    // Menú principal
+    // MenÃº principal
     Repetir
-        Escribir "Menú:"
-        Escribir "1. Ingresar secuencia de números (ingrese un número par para terminar)"
-        Escribir "2. Mostrar cantidad de números mayores a 5 y suma de múltiplos de 5"
+        Escribir "MenÃº:"
+        Escribir "1. Ingresar secuencia de nÃºmeros (ingrese un nÃºmero par para terminar)"
+        Escribir "2. Mostrar cantidad de nÃºmeros mayores a 5 y suma de mÃºltiplos de 5"
         Escribir "3. Salir"
-        Escribir "Seleccione una opción:"
+        Escribir "Seleccione una opciÃ³n:"
         Leer opcion
-        // Selección de opción
+        // SelecciÃ³n de opciÃ³n
         Segun opcion Hacer
             1:
-                // Ingresar secuencia de números hasta que se ingrese un número par
+                // Ingresar secuencia de nÃºmeros hasta que se ingrese un nÃºmero par
                 Mientras Verdadero
-                    Escribir "Ingrese un número (ingrese un número par para terminar):"
+                    Escribir "Ingrese un nÃºmero (ingrese un nÃºmero par para terminar):"
                     Leer num
                     
                     Si num MOD 2 = 0 Entonces
-                        // Salir del bucle si se ingresa un número par
+                        // Salir del bucle si se ingresa un nÃºmero par
                         //Romper
                     Fin Si
                     
-                    // Analizar el número
+                    // Analizar el nÃºmero
                     Si num > 5 Entonces
                         contMay5 = contMay5 + 1
                     Fin Si
@@ -1138,22 +1138,22 @@ Funcion Ejercicio7C
                     Fin Si
                 Fin Mientras
             2:
-                // Mostrar cantidad de números mayores a 5 y suma de múltiplos de 5
-                Escribir "Cantidad de números mayores a 5:", contMay5
-                Escribir "Suma de múltiplos de 5:", sumaMultiplos5
+                // Mostrar cantidad de nÃºmeros mayores a 5 y suma de mÃºltiplos de 5
+                Escribir "Cantidad de nÃºmeros mayores a 5:", contMay5
+                Escribir "Suma de mÃºltiplos de 5:", sumaMultiplos5
             3:
                 // Salir del programa
                 Escribir "Saliendo del programa."
             Otro:
-                // Opción no válida
-                Escribir "Opción no válida. Intente de nuevo."
+                // OpciÃ³n no vÃ¡lida
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         Fin Segun
     Hasta Que opcion = 3
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio8C
-	//8) Leer una secuencia de números hasta que se ingrese un numero negativo y almacenarlos en un arreglo Se pide recorrer el arreglo y mostrar la suma de cada número elevado al cubo.  
+	//8) Leer una secuencia de nÃºmeros hasta que se ingrese un numero negativo y almacenarlos en un arreglo Se pide recorrer el arreglo y mostrar la suma de cada nÃºmero elevado al cubo.  
     //Ejemplo:  secuencia: 4,3,2,5,-1 arreglo=[4,3,2,5] exponentes= 64  27  8   125 respuestaSuma=224 
 	
     // Declarar variables
@@ -1163,16 +1163,16 @@ Funcion Ejercicio8C
     arreglo = []
 	
     // Entrada de datos
-    Mostrar "Ingrese una secuencia de números. Para terminar, ingrese un número negativo."
+    Mostrar "Ingrese una secuencia de nÃºmeros. Para terminar, ingrese un nÃºmero negativo."
     Leer secuencia
 	
     // Procesamiento de la secuencia
     Mientras secuencia >= 0
-        // Almacenar número en el arreglo
+        // Almacenar nÃºmero en el arreglo
         //arreglo.Agregarsecuencia
 		
-        // Leer siguiente número
-        Mostrar "Ingrese otro número (negativo para terminar):"
+        // Leer siguiente nÃºmero
+        Mostrar "Ingrese otro nÃºmero (negativo para terminar):"
         Leer secuencia
     Fin Mientras
 	
@@ -1201,7 +1201,7 @@ Funcion Ejercicio9C
         Escribir "1. Ingresar frase"
         Escribir "2. Contar palabras"
         Escribir "3. Salir"
-        Escribir "Elija una opción: "
+        Escribir "Elija una opciÃ³n: "
         Leer opcion
 		
         Segun opcion
@@ -1219,39 +1219,39 @@ Funcion Ejercicio9C
 			Caso "3":
                 Escribir "Saliendo del programa."
 			De Otro Modo:
-                Escribir "Opción no válida. Intente de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. Intente de nuevo."
         FinSegun
     Hasta Que opcion = "3"
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio10C
-	//10) Leer una secuencia de números hasta que se ingrese un numero negativo y almacenarlos en arreglo. 
+	//10) Leer una secuencia de nÃºmeros hasta que se ingrese un numero negativo y almacenarlos en arreglo. 
 	//Se pide recorrer el arreglo y cambiar cada  elemento del arreglo por su doble.  
 	
     // Declarar variables
     Definir secuencia como Real
     Definir arreglo, vector Como Real
     Definir opcion como Entero
-    // Menú
+    // MenÃº
     Repetir
-        Mostrar "1. Ingresar número"
+        Mostrar "1. Ingresar nÃºmero"
         Mostrar "2. Mostrar arreglo original"
         Mostrar "3. Duplicar arreglo"
         Mostrar "4. Salir"
-        Mostrar "Seleccione una opción:"
+        Mostrar "Seleccione una opciÃ³n:"
         Leer opcion
 		
-        // Según la opción seleccionada
+        // SegÃºn la opciÃ³n seleccionada
         Segun opcion Hacer
             1:
-                // Ingresar número a la secuencia
-                Mostrar "Ingrese un número (negativo para terminar):"
+                // Ingresar nÃºmero a la secuencia
+                Mostrar "Ingrese un nÃºmero (negativo para terminar):"
                 Leer secuencia
 				
                 // Validar si es negativo para terminar
                 Si secuencia >= 0 Entonces
-                    // Almacenar número en el arreglo
+                    // Almacenar nÃºmero en el arreglo
                     //arreglo.Agregarsecuencia
                 Fin Si
             2:
@@ -1268,15 +1268,15 @@ Funcion Ejercicio10C
                 // Salir del bucle
                 Mostrar "Saliendo del programa."
             Otro:
-                // Opción no válida
-                Mostrar "Opción no válida. Intente nuevamente."
+                // OpciÃ³n no vÃ¡lida
+                Mostrar "OpciÃ³n no vÃ¡lida. Intente nuevamente."
         Fin Segun
     Hasta Que opcion = 4
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio11C
-	//11) Leer una secuencia de caracteres hasta que se ingrese un punto.  Deberá mostrar cuantos "x" se ingresaron
+	//11) Leer una secuencia de caracteres hasta que se ingrese un punto.  DeberÃ¡ mostrar cuantos "x" se ingresaron
 	
     Definir letra, opcion, contador Como Entero
 	
@@ -1286,7 +1286,7 @@ Funcion Ejercicio11C
         Escribir "Menu:"
         Escribir "1. Ingresar secuencia de caracteres"
         Escribir "2. Salir"
-        Escribir "Selecciona una opción:"
+        Escribir "Selecciona una opciÃ³n:"
         Leer opcion
 		
         Segun opcion Hacer
@@ -1299,46 +1299,46 @@ Funcion Ejercicio11C
                         contador = contador + 1
                     FinSi
                 Hasta Que letra = a
-                Escribir "La letra x se ingresó ", contador, " veces."
+                Escribir "La letra x se ingresÃ³ ", contador, " veces."
             2:
                 Escribir "Saliendo del programa."
             OtroCaso:
-                Escribir "Opción no válida. Inténtalo de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. IntÃ©ntalo de nuevo."
         FinSegun
     Hasta Que opcion = 2
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio12C
-	//12) Leer una secuencia de números hasta que se ingrese un 0 y almacenarlos en arreglo. 
-	//Se pide recorrer el arreglo y pasar a otro  arreglo solo los números pares de cada elemento del arreglo1
+	//12) Leer una secuencia de nÃºmeros hasta que se ingrese un 0 y almacenarlos en arreglo. 
+	//Se pide recorrer el arreglo y pasar a otro  arreglo solo los nÃºmeros pares de cada elemento del arreglo1
 	
-    Definir arreglo1 como entero  // Tamaño del arreglo1, ajusta según sea necesario
-    Definir arreglo2 como entero // Tamaño del arreglo2, ajusta según sea necesario
+    Definir arreglo1 como entero  // TamaÃ±o del arreglo1, ajusta segÃºn sea necesario
+    Definir arreglo2 como entero // TamaÃ±o del arreglo2, ajusta segÃºn sea necesario
     Definir numero, indice1, indice2 como entero
 	
     // Lectura de la secuencia hasta que se ingrese un 0
-    Mostrar "Ingrese una secuencia de números (terminar con un 0): "
+    Mostrar "Ingrese una secuencia de nÃºmeros (terminar con un 0): "
     Leer numero
-    indice1 = 1  // Inicializamos el índice del primer arreglo
+    indice1 = 1  // Inicializamos el Ã­ndice del primer arreglo
 	
     Mientras numero <> 0
-        arreglo1indice1 = numero  // Almacenamos el número en el arreglo1
-        indice1 = indice1 + 1  // Incrementamos el índice
-        Leer numero  // Leemos el siguiente número
+        arreglo1indice1 = numero  // Almacenamos el nÃºmero en el arreglo1
+        indice1 = indice1 + 1  // Incrementamos el Ã­ndice
+        Leer numero  // Leemos el siguiente nÃºmero
     Fin Mientras
 	
-    // Recorremos el arreglo1 y filtramos los números pares en arreglo2
-    indice1 = 1  // Reiniciamos el índice del primer arreglo
-    indice2 = 1  // Inicializamos el índice del segundo arreglo
+    // Recorremos el arreglo1 y filtramos los nÃºmeros pares en arreglo2
+    indice1 = 1  // Reiniciamos el Ã­ndice del primer arreglo
+    indice2 = 1  // Inicializamos el Ã­ndice del segundo arreglo
 	
     Mientras indice1 < indice2
-        Si arreglo1indice1 % 2 = 0  // Si el número es par
-            arreglo2indice2 = arreglo1indice1  // Almacenamos el número par en arreglo2
-            indice2 = indice2 + 1  // Incrementamos el índice del segundo arreglo
+        Si arreglo1indice1 % 2 = 0  // Si el nÃºmero es par
+            arreglo2indice2 = arreglo1indice1  // Almacenamos el nÃºmero par en arreglo2
+            indice2 = indice2 + 1  // Incrementamos el Ã­ndice del segundo arreglo
         Fin Si
 		
-        indice1 = indice1 + 1  // Incrementamos el índice del primer arreglo
+        indice1 = indice1 + 1  // Incrementamos el Ã­ndice del primer arreglo
     Fin Mientras
 	
     // Mostramos los arreglos resultantes
@@ -1347,7 +1347,7 @@ Funcion Ejercicio12C
         Mostrar arreglo1
     Fin Para
 	
-    Mostrar "Arreglo2 (números pares de arreglo1): "
+    Mostrar "Arreglo2 (nÃºmeros pares de arreglo1): "
     Para i desde 1 hasta indice2 - 1
         Mostrar arreglo2
     Fin Para
@@ -1355,17 +1355,17 @@ FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio13C
-	//13) Dado dos números presentar los valores mayores a 5 entre ellos incluidos el numero inicial y final
+	//13) Dado dos nÃºmeros presentar los valores mayores a 5 entre ellos incluidos el numero inicial y final
 	
     Definir numero1, numero2, i Como Entero
     
-    Escribir "Ingrese el primer número: "
+    Escribir "Ingrese el primer nÃºmero: "
     Leer numero1
     
-    Escribir "Ingrese el segundo número: "
+    Escribir "Ingrese el segundo nÃºmero: "
     Leer numero2
     
-    Escribir "Los números mayores a 5 son:"
+    Escribir "Los nÃºmeros mayores a 5 son:"
     
     i = numero1
     Mientras i <= numero2
@@ -1379,16 +1379,16 @@ FinFuncion
 
 Funcion Ejercicio14C
 	//14)    Elaborar un algoritmo que lea una serie de edades de los alumnos de la facultad FACI y los guarde en un arreglo. Se pide: 
-	//calcular el promedio general de las edades de los alumnos ·      
-	//La cantidad y el promedio de las edades mayores o iguales a 18 ·   
+	//calcular el promedio general de las edades de los alumnos Â·      
+	//La cantidad y el promedio de las edades mayores o iguales a 18 Â·   
     //La cantidad y el promedio de las edades menores a 18 
 	
-    // Definición de variables
+    // DefiniciÃ³n de variables
     Definir cantidad, sumaEdades, promedioGeneral, cantidadMayores18, sumaMayores18, promedioMayores18, cantidadMenores18, sumaMenores18, promedioMenores18 Como Real
     Definir edades Como Entero
     Definir i Como Entero
 	
-    // Inicialización de variables
+    // InicializaciÃ³n de variables
     cantidad = 0
     sumaEdades = 0
     cantidadMayores18 = 0
@@ -1426,42 +1426,42 @@ Funcion Ejercicio14C
     // Calcular promedio de mayores de 18
     Si cantidadMayores18 > 0 Entonces
         promedioMayores18 = sumaMayores18 / cantidadMayores18
-        Escribir("Alumnos mayores o iguales a 18 años:")
+        Escribir("Alumnos mayores o iguales a 18 aÃ±os:")
         Escribir "Cantidad: ", cantidadMayores18
         Escribir "Promedio de edades: ", promedioMayores18
     Sino
-        Escribir("No hay alumnos mayores o iguales a 18 años.")
+        Escribir("No hay alumnos mayores o iguales a 18 aÃ±os.")
     FinSi
 	
     // Calcular promedio de menores de 18
     Si cantidadMenores18 > 0 Entonces
         promedioMenores18 = sumaMenores18 / cantidadMenores18
-        Escribir("Alumnos menores a 18 años:")
+        Escribir("Alumnos menores a 18 aÃ±os:")
         Escribir "Cantidad: ", cantidadMenores18
         Escribir "Promedio de edades: ", promedioMenores18
     Sino
-        Escribir("No hay alumnos menores a 18 años.")
+        Escribir("No hay alumnos menores a 18 aÃ±os.")
     FinSi
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio15C
-	//15) Dado dos números presentar los valores Impares comprendidos entre ellos(excluidos el valor inicial y final) 
+	//15) Dado dos nÃºmeros presentar los valores Impares comprendidos entre ellos(excluidos el valor inicial y final) 
 	
     Definir opcion, numero1, numero2, i como Entero
     Repetir
         Escribir "MENU"
         Escribir "1. Encontrar valores impares"
         Escribir "2. Salir"
-        Escribir "Ingrese su opción:"
+        Escribir "Ingrese su opciÃ³n:"
         Leer opcion
         
         Segun opcion Hacer
             Caso 1:
-                Escribir "Ingrese el primer número:"
+                Escribir "Ingrese el primer nÃºmero:"
                 Leer numero1
                 
-                Escribir "Ingrese el segundo número:"
+                Escribir "Ingrese el segundo nÃºmero:"
                 Leer numero2
                 
                 Escribir "Valores impares entre ", numero1, " y ", numero2, ":"
@@ -1472,18 +1472,18 @@ Funcion Ejercicio15C
                     FinSi
                 FinPara
             Caso 2:
-                Escribir "¡Hasta luego!"
+                Escribir "Â¡Hasta luego!"
                 
             OtroCaso:
-                Escribir "Opción no válida. Inténtelo de nuevo."
+                Escribir "OpciÃ³n no vÃ¡lida. IntÃ©ntelo de nuevo."
         FinSegun
     Hasta Que opcion = 2
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio16C
-	//16) Elaborar un algoritmo que lea una serie de sueldos de los empleados de la unemi y los guarde en un arreglo. Se pide:  ·   
-    //Presentar el sueldo más alto de los empleados ·      
+	//16) Elaborar un algoritmo que lea una serie de sueldos de los empleados de la unemi y los guarde en un arreglo. Se pide:  Â·   
+    //Presentar el sueldo mÃ¡s alto de los empleados Â·      
 	//La cantidad y el promedio de os sueldos de los empleados 
 	
     Definir sueldos, arreglo Como Entero
@@ -1503,7 +1503,7 @@ Funcion Ejercicio16C
         // Sumar el sueldo al total
         sumaSueldos = sumaSueldos + sueldos
         
-        // Verificar si es el sueldo más alto
+        // Verificar si es el sueldo mÃ¡s alto
         Si i = 1 O sueldos > sueldoMasAlto Entonces
             sueldoMasAlto = sueldos
         FinSi
@@ -1513,7 +1513,7 @@ Funcion Ejercicio16C
     promedioGeneral = sumaSueldos / cantidadSueldos
 	
     // Mostrar resultados
-    Escribir "Sueldo más alto:", sueldoMasAlto
+    Escribir "Sueldo mÃ¡s alto:", sueldoMasAlto
     Escribir "Cantidad de sueldos:", cantidadSueldos
     Escribir "Promedio general de sueldos:", promedioGeneral
 FinFuncion
@@ -1580,7 +1580,7 @@ FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio19C
-	//19) Dado una cadena indicar cuantas vocales, consonantes y dígitos hay" 
+	//19) Dado una cadena indicar cuantas vocales, consonantes y dÃ­gitos hay" 
 	Definir cadena Como Cadena
 	Definir long, contadorVocales, contadorConsonantes, contadorDigitos Como Entero
 	Definir caracter Como Caracter
@@ -1612,7 +1612,7 @@ Funcion Ejercicio19C
 	
 	Escribir "Vocales encontradas:", contadorVocales
 	Escribir "Consonantes encontradas:", contadorConsonantes
-	Escribir "Dígitos encontrados:", contadorDigitos
+	Escribir "DÃ­gitos encontrados:", contadorDigitos
 	
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
@@ -1620,7 +1620,7 @@ FinFuncion
 Funcion Ejercicio20C
 	//20)Indicar cuantas palabras hay en una frase asumiendo 1 o varios espacios entre palabras" 
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir frase Como Cadena
     Definir contadorPalabras, longitudFrase, i Como Entero
 	
@@ -1653,39 +1653,39 @@ Funcion Ejercicio20C
         Fin Si
     Fin Mientras
     // Mostrar resultados
-    Escribir "Número de palabras: ", contadorPalabras
+    Escribir "NÃºmero de palabras: ", contadorPalabras
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 
 Funcion Ejercicio21C
-	//21) Presentar la suma de los dígitos de una cedula"
+	//21) Presentar la suma de los dÃ­gitos de una cedula"
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Definir cedula, sumaDigitos  Como Entero
-    // Inicializar la suma de dígitos
+    // Inicializar la suma de dÃ­gitos
     sumaDigitos = 0
     // Entrada de datos
-    Escribir("Ingrese el número de cédula: ")
+    Escribir("Ingrese el nÃºmero de cÃ©dula: ")
     Leer cedula
-    // Calcular la suma de dígitos
+    // Calcular la suma de dÃ­gitos
     Mientras cedula > 0 Hacer
         sumaDigitos = sumaDigitos + cedula % 10
         cedula = cedula / 10
     Fin Mientras
     // Mostrar resultado
-    Escribir "La suma de los dígitos de la cédula es: ", sumaDigitos
+    Escribir "La suma de los dÃ­gitos de la cÃ©dula es: ", sumaDigitos
 FinFuncion
 //---------------------------------------------------------------------------------------------------------------------------------------//
 Funcion Ejercicio22C
-	//22) Indicar si una palabra es palíndroma". Ejemplo: "ana" es palíndroma por se lee igual de inicio a fin que de fin a inicio
+	//22) Indicar si una palabra es palÃ­ndroma". Ejemplo: "ana" es palÃ­ndroma por se lee igual de inicio a fin que de fin a inicio
     Definir palabra, palabraInvertida Como Cadena
 	Definir opcion, esPalindromo, i, long Como Entero
 	
 	Repetir
 		Escribir "Menu:"
-		Escribir "1. Verificar si una palabra es palíndroma."
+		Escribir "1. Verificar si una palabra es palÃ­ndroma."
 		Escribir "2. Salir."
-		Escribir "Seleccione una opción (1 o 2):"
+		Escribir "Seleccione una opciÃ³n (1 o 2):"
 		Leer opcion
 		
 		Si opcion = 1 Entonces
@@ -1713,14 +1713,14 @@ Funcion Ejercicio22C
 			Fin Si
 			
 			Si esPalindromo = 1 Entonces
-				Escribir "La palabra es palíndroma."
+				Escribir "La palabra es palÃ­ndroma."
 			Sino
-				Escribir "La palabra no es palíndroma."
+				Escribir "La palabra no es palÃ­ndroma."
 			Fin Si
 		Sino Si opcion = 2 Entonces
 				Escribir "Hasta luego"
 			Sino
-				Escribir "Opción no válida. Por favor, seleccione 1 o 2."
+				Escribir "OpciÃ³n no vÃ¡lida. Por favor, seleccione 1 o 2."
 			Fin Si
 		FinSi
 		
@@ -1729,37 +1729,37 @@ FinFuncion
 	
 //---------------------------------------------------------------------------------------------------------------------------------------//
 Funcion Ejercicio23C
-	//23) Presentar la posición de un carácter cualquiera dentro de una cadena" 
+	//23) Presentar la posiciÃ³n de un carÃ¡cter cualquiera dentro de una cadena" 
 	
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     Cadena=cadena
     Caracter=caracter
     Definir posicion, opcion Como Entero
-    // Menú
-    Escribir("1. Encontrar la posición de un carácter en una cadena")
+    // MenÃº
+    Escribir("1. Encontrar la posiciÃ³n de un carÃ¡cter en una cadena")
     Escribir("2. Salir")
-    Escribir("Ingrese su opción: ")
+    Escribir("Ingrese su opciÃ³n: ")
     Leer opcion
     Segun opcion Hacer
         1:
-            // Encontrar la posición de un carácter
+            // Encontrar la posiciÃ³n de un carÃ¡cter
             Escribir("Ingrese una cadena: ")
             Leer cadena
-            Escribir("Ingrese un carácter: ")
+            Escribir("Ingrese un carÃ¡cter: ")
             Leer caracter
 			
             posicion = EncontrarPosicioncadenacaracter
 			
             Si posicion > 0 Entonces
-                Escribir "El carácter ", caracter, " se encuentra en la posición ", posicion
+                Escribir "El carÃ¡cter ", caracter, " se encuentra en la posiciÃ³n ", posicion
             Sino
-                Escribir "El carácter ", caracter, " no se encuentra en la cadena."
+                Escribir "El carÃ¡cter ", caracter, " no se encuentra en la cadena."
             Fin Si
  
         2:
             Escribir("Saliendo del programa.")
         Otro:
-            Escribir("Opción no válida. Inténtelo de nuevo.")
+            Escribir("OpciÃ³n no vÃ¡lida. IntÃ©ntelo de nuevo.")
           
     Fin Segun
 FinFuncion
